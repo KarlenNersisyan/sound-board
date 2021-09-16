@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: rgb(161, 100, 223);
+  background-color: rgb(172, 142, 202);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -12,6 +12,7 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  overflow-y: scroll;
 }
 
 .btn {
@@ -22,14 +23,22 @@ body {
   margin: 1rem;
   padding: 1.5rem 3rem;
   font-size: 1.2rem;
-  font-family: inherit;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .btn:hover {
   opacity: 0.9;
+  transform: scale(1.07);
+  color: red;
 }
 
 .btn:focus {
   outline: none;
+}
+
+h1 {
+  font-size: 80px;
+  color: white;
+  text-shadow: 5px 5px red;
 }
